@@ -9,7 +9,7 @@ CREATE TABLE Countries (
     PRIMARY KEY (ID)
 );
 
-CREATE TABLE Warehouse (
+CREATE TABLE Warehouses (
     ID INT,
     Name VARCHAR(50),
     Address VARCHAR(50),
