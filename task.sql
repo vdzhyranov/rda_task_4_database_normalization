@@ -19,9 +19,9 @@ CREATE TABLE Warehouse (
 );
 
 CREATE TABLE Products (
-    ProductID INT,
+    ID INT,
     ProductName VARCHAR(50),
-    PRIMARY KEY (ProductID)
+    PRIMARY KEY (ID)
 );
 
 CREATE TABLE ProductInventory (
