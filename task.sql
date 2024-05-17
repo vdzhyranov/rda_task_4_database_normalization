@@ -29,7 +29,7 @@ CREATE TABLE ProductInventory (
     ProductID INT,
     WarehouseID INT,
     WarehouseAmount INT,
-	FOREIGN KEY (ProductID) REFERENCES PRODUCTS(ID) ON DELETE NO ACTION,
+	FOREIGN KEY (ProductID) REFERENCES Products(ID) ON DELETE NO ACTION,
 	FOREIGN KEY (WarehouseID) REFERENCES Warehouse(ID) ON DELETE NO ACTION,
     PRIMARY KEY (ID)
 );
@@ -42,7 +42,7 @@ INSERT INTO Countries (ID,Name)
 INSERT INTO Warehouses (ID, Name, Address, CountryID)
     VALUES (1, 'Warehouse-1', 'City-1, Street-1', 1), (2, 'Warehouse-2', 'City-2, Street-2', 2);
 
-INSERT INTO PRODUCTS (ID,ProductName)
+INSERT INTO Products (ID,ProductName)
 	VALUES (1, 'AwesomeProduct'), (2, 'AwesomeProduct');
 
 INSERT INTO ProductInventory (ID,ProductID,WarehouseID,WarehouseAmount)
